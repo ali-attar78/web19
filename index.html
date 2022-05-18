@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>taxi</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body style="text-align: center;">
+
+
+
+  <nav class="navbar navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <img src="images/logo.png" alt="logo" class="logohead">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Taxi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Map</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Google
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">google translate</a></li>
+              <li><a class="dropdown-item" href="#">google map</a></li>
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Permium</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Enter your location" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+
+    <h1>Speed Taxi</h1>
+
+
+    <div class="alert alert-warning" role="alert" id="alertdiv">
+      Specify the origin </div>
+
+
+    <div id="googleMap"></div>
+
+
+
+    <div class="row">
+      <div class="alert col" role="alert" id="divprice">
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-6 col-md-6 col-sm-12 " id="btndivpay">
+
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12 " id="btndivcancel">
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <script src="js/myJson.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkkvmPCtlTNIVVV1afo7nbq5F-wAZijYA&callback=myMap"></script>
+
+
+
+</body>
+
+</html>
